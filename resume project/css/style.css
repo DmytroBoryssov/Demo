@@ -1,0 +1,258 @@
+body {
+  background: #fbfffbcc;
+  padding: 40px 40px 40px 40px;
+  font-family: "Montserrat", sans-serif;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.wrapper {
+  background: #f0efec;
+  display: flex;
+  flex-direction: row-reverse;
+  width: 1200px;
+  margin: 0 auto;
+}
+/* Main content */
+
+.main-content {
+  padding: 88px 80px 40px 80px;
+  box-sizing: border-box;
+}
+/* Sidebar */
+
+.sidebar {
+  background: #d1d6a0;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  box-sizing: border-box;
+  width: 370px;
+}
+.sidebar-content {
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 40px;
+  box-sizing: border-box;
+}
+/* Contacts */
+
+.contacts-title {
+  font-weight: 700;
+  font-size: 22px;
+  color: #000000;
+  line-height: normal;
+  margin-top: 0px;
+  margin-bottom: 8px;
+}
+.contact-type {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  color: #000000;
+  margin-right: 8px;
+}
+.contact-link {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #496faf;
+  text-decoration-line: underline;
+}
+.contacts-item {
+  margin-top: 0px;
+  margin-bottom: 4px;
+}
+.contacts-conteiner {
+  margin-bottom: 40px;
+}
+/* Skills conteiner */
+
+.skills-conteiner {
+  margin-bottom: 40px;
+}
+
+.skill-title {
+  font-weight: 700;
+  font-size: 22px;
+  color: #161d2a;
+  line-height: normal;
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+.skill-list {
+  padding-left: 16px;
+}
+.skill-list-item {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #161d2a;
+}
+
+.soft-conteiner {
+  margin-bottom: 40px;
+}
+.soft-title {
+  font-weight: 700;
+  font-size: 22px;
+  color: #161d2a;
+  line-height: normal;
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+.soft-list {
+  padding-left: 16px;
+}
+.soft-list-item {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #161d2a;
+}
+
+/* Main content */
+.my-profession {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000;
+  margin-top: 0px;
+  margin-bottom: 8px;
+}
+
+.my-name {
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 55px;
+  color: #000;
+  margin-top: 0px;
+}
+.my-info {
+  margin-bottom: 40px;
+}
+
+.my-descr {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #595959;
+}
+
+/* My project */
+.my-project-conteiner {
+  margin-bottom: 40px;
+}
+.my-project-title {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 27px;
+  color: #000;
+  margin-top: 0px;
+  margin-bottom: 8px;
+}
+
+.my-project-item {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  color: #000;
+}
+.my-project-list {
+  padding-left: 16px;
+}
+
+.my-project-item-link {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  text-decoration: underline;
+  color: #005fff;
+}
+
+.my-project-tec {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #595959;
+}
+/* Work Experience */
+.work-experience-conteiner {
+  margin-bottom: 12px;
+}
+.work-experience-title {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 27px;
+  color: #000;
+  margin-bottom: 8px;
+  margin-top: 0;
+}
+.work-experience-company {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000;
+  margin-bottom: 0px;
+  margin-top: 12px;
+}
+.company-name {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #88200d;
+}
+.company-period {
+  font-weight: 400;
+  font-size: 12px;
+  color: hsla(27, 92%, 41%, 0.986);
+  margin-bottom: 8px;
+}
+.separator {
+  color: #000;
+}
+.duties-item {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #0c0101;
+}
+.duties-list {
+  padding-left: 16px;
+}
+
+/* Education */
+.education-conteiner {
+  margin-bottom: 16px;
+}
+.education-title {
+  font-weight: 700;
+  font-size: 22px;
+  color: #000;
+  margin-bottom: 0px;
+  margin-top: 38px;
+}
+
+.education-name {
+  font-weight: 700;
+  font-size: 16px;
+  color: #290458f8;
+  margin-bottom: 8px;
+  margin-top: 8px;
+}
+
+.education-profession {
+  font-weight: 700;
+  font-size: 14px;
+  color: #000;
+  margin-top: 6px;
+  margin-bottom: 8px;
+}
+.education-period {
+  font-weight: 400;
+  font-size: 12px;
+  color: hsla(27, 92%, 41%, 0.986);
+  margin-bottom: 8px;
+}
