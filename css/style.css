@@ -1,0 +1,72 @@
+/* Головні кольори  */
+:root {
+  --color-primary: rgb(0, 0, 0);
+  --color-secondary: #0e010e;
+  --color-tertiary: #3d7aff;
+  --color-quaternary: #e77474;
+}
+
+body {
+  background-color: #f5eef5;
+  color: var(--color-primary);
+  font-family: "Times New Roman", Times, serif;
+}
+/* Logo */
+.logo {
+  color: #152419;
+  font-size: 20px;
+}
+.logo:hover {
+  color: #2b22aa;
+}
+.logo:focus {
+  color: #2b22aa;
+}
+/* Hero */
+.hero {
+  background-color: var(--color-secondary);
+}
+/* Section */
+.section-title {
+  color: #160101;
+}
+.section-price-title {
+  color: #0b3b04;
+}
+.my-address {
+  color: #483a61;
+}
+.address-text {
+  color: #035e03;
+}
+.link-instagram {
+  color: #17b466;
+}
+.link-instagram:hover,
+.link-instagram:focus {
+  color: #221b83;
+}
+/* button */
+.button {
+  list-style: none;
+}
+.button-primary {
+  background-color: var(--color-tertiary);
+  color: var(--color-primary);
+}
+.button-primary:hover {
+  background-color: #dad9e0;
+}
+.button-primary:focus {
+  background-color: #565470;
+}
+.button-secondary {
+  background-color: var(--color-quaternary);
+  color: var(--color-primary);
+}
+.button-secondary:hover {
+  background-color: #dad9e0;
+}
+.button-secondary:focus {
+  background-color: #565470;
+}
