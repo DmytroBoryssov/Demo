@@ -127,3 +127,71 @@
 // console.log(string1.includes(blacklistWord1));
 // console.log(string1.includes(blacklistWord2));
 // console.log(string2.toLowerCase().includes(blacklistWord2));
+
+// Оператори порівнення
+// console.log(16 < 4);
+
+// Приведення до "буля" Boolean
+// console.log(Boolean) - тількі 6 значень приводиться до false (0,nule , NaN)
+
+// console.log(5 && 6)
+// застрягає на брехні і повертає те що на чому запнуло далі не іде
+// якщо не запнулось то повертає останій оперант
+// console.log(5||6)
+// застрягає на правді , це противоположна дія до верхньої
+// console.log(!true)
+// а виведе false
+
+// скрипт якй перевіряє входження числа у відрізок х1 и х2
+// до х1 , після х2,від х1дох2,до х1 чи після х2
+
+const x1 = 10;
+const x2 = 30;
+const Number = 15;
+
+console.log(`Число ${Number} попаде в відрізок до &{x1} ?`, Number < x1);
+console.log(`Число ${Number} попаде в відрізок до &{x2} ?`, Number > x2);
+const res1 = Number > x1 && Number < x2;
+// 50>10 && 50<30
+// true && false  
+// false
+console.log(`Число ${Number} попаде в відрізок от &{x1} и до  &{x2} ?`, res1);
+
+const res2 = Number < x1 || Number > x2;
+// 50<10 || 50>30
+// false || true
+// true
+console.log(`Число ${Number} попаде в відрізок от &{x1} и до  &{x2} ?`, res2);
+ 
+const sub = "pro";
+const canAccesseContent = sub === "pro"|| sub === "vip";
+console.log(`Є доступ до контенту ?`, canAccesseContent)
+
+// Оператор if "якщо так виконувати як що ні ігнорувати " далі покаже усе за дужками {}
+if (2) { 
+    console.log("Якщо правда це покаже");
+}
+ 
+// Операор if ..... else
+if (5 < 6) {
+    console.log("Якщо");
+} else { "Може показати " };
+
+// Оператор else.....if до першрго співпадіння 
+
+const salary = 1000;
+if (salary < 500) {
+    console.log("Рівень 1");
+} else if (salary > 500 && salary < 1500)
+ { console.log ("Рівень 2") };
+//  Тернарні оператори 
+const balance = 1000;
+
+
+// if (balance <= 0) {
+//     message = "позитивний баланс";
+// } else{
+//     message = "негативний баланс";
+// }
+const message = balance <=0 ? "позитивний баланс"  : "негативний  баланс";
+console.log(message);
