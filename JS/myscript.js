@@ -1,4 +1,4 @@
-// Переміні\\ ОБОВЯЗКОВО крапка з комою
+// // Переміні\\ ОБОВЯЗКОВО крапка з комою
 
 // const age = 26;
 // const totalPrice = 2.5;
@@ -145,47 +145,47 @@
 // скрипт якй перевіряє входження числа у відрізок х1 и х2
 // до х1 , після х2,від х1дох2,до х1 чи після х2
 
-const x1 = 10;
-const x2 = 30;
-const Number = 15;
+// const x1 = 10;
+// const x2 = 30;
+// const Number = 15;
 
-console.log(`Число ${Number} попаде в відрізок до &{x1} ?`, Number < x1);
-console.log(`Число ${Number} попаде в відрізок до &{x2} ?`, Number > x2);
-const res1 = Number > x1 && Number < x2;
+// console.log(`Число ${Number} попаде в відрізок до &{x1} ?`, Number < x1);
+// console.log(`Число ${Number} попаде в відрізок до &{x2} ?`, Number > x2);
+// const res1 = Number > x1 && Number < x2;
 // 50>10 && 50<30
-// true && false  
+// true && false
 // false
-console.log(`Число ${Number} попаде в відрізок от &{x1} и до  &{x2} ?`, res1);
+// console.log(`Число ${Number} попаде в відрізок от &{x1} и до  &{x2} ?`, res1);
 
-const res2 = Number < x1 || Number > x2;
+// const res2 = Number < x1 || Number > x2;
 // 50<10 || 50>30
 // false || true
 // true
-console.log(`Число ${Number} попаде в відрізок от &{x1} и до  &{x2} ?`, res2);
+// console.log(`Число ${Number} попаде в відрізок от &{x1} и до  &{x2} ?`, res2);
  
-const sub = "pro";
-const canAccesseContent = sub === "pro"|| sub === "vip";
-console.log(`Є доступ до контенту ?`, canAccesseContent)
+// const sub = "pro";
+// const canAccesseContent = sub === "pro"|| sub === "vip";
+// console.log(`Є доступ до контенту ?`, canAccesseContent)
 
 // Оператор if "якщо так виконувати як що ні ігнорувати " далі покаже усе за дужками {}
-if (2) { 
-    console.log("Якщо правда це покаже");
-}
+// if (2) {
+//     console.log("Якщо правда це покаже");
+// }
  
 // Операор if ..... else
-if (5 < 6) {
-    console.log("Якщо");
-} else { "Може показати " };
+// if (5 < 6) {
+//     console.log("Якщо");
+// } else { "Може показати " };
 
-// Оператор else.....if до першрго співпадіння 
+// Оператор else.....if до першрго співпадіння
 
-const salary = 1000;
-if (salary < 500) {
-    console.log("Рівень 1");
-} else if (salary > 500 && salary < 1500)
- { console.log ("Рівень 2") };
-//  Тернарні оператори 
-const balance = 1000;
+// const salary = 1000;
+// if (salary < 500) {
+//     console.log("Рівень 1");
+// } else if (salary > 500 && salary < 1500)
+//  { console.log ("Рівень 2") };
+// //  Тернарні оператори
+// const balance = 1000;
 
 
 // if (balance <= 0) {
@@ -193,5 +193,117 @@ const balance = 1000;
 // } else{
 //     message = "негативний баланс";
 // }
-const message = balance <=0 ? "позитивний баланс"  : "негативний  баланс";
-console.log(message);
+// const message = balance <=0 ? "позитивний баланс"  : "негативний  баланс";
+// console.log(message);
+
+// Switch тільки на рівність
+
+// const stars = 3;
+// let price;
+
+// // if (stars === 1) { price = 20; }
+// // else if (stars === 2) { price = 30; }
+// // else if (stars === 3) { price = 50; }
+// // else if (stars === 4) { price = 70; }
+// // else if (stars === 5) { price = 120; }
+// // else {
+// //     'немає такої оцінки';
+// // };
+// switch (stars) {
+//     case 1:
+//         price = 20;
+//         break;
+//     case 2:
+//         price = 30;
+//         break;
+//     case 3:
+//         price = 50;
+//         console.log("Найвигідніший вибір");
+//         break;
+//     case 4:
+//         price = 70;
+//         break;
+//     case 5:
+//         price = 120;
+//         break;
+//     default:
+//         price = 'Немає такої зірки ';
+// }
+// console.log(price);
+
+// якщо одинакові case (1,2=20$), (3,4=50$), (5=120$)
+// const stars = 1;
+
+// let price;
+
+// if (stars === 1 || stars === 2) { price = 20; }
+// else if (stars === 3 || stars === 4) { price = 50; }
+// else if (stars === 5) { price = 120; }
+// else { "немає такої оцінки" };
+
+// console.log(price);
+
+// switch (stars) {
+//     case 1:
+//     case 2:
+//         price = 20;
+//         break;
+    
+//     case 3:
+//     case 4:
+//         price = 50;
+//         break;
+//     case 5:
+//         price = 120;
+//         break;
+//     default:
+//         price = 'Немає такої зірки ';
+// }
+// console.log(price);
+
+// Задача
+//  1 - самовивіз 2 - курєр 3 - відправлення поштою
+// messege = "Ви можете забрати товар завтра о 13:00"
+// messege = "Курєр доставить товар завтра до 10:00"
+// messege = "Товар буде відправлено сьогодні"
+// messege = "Вам зателефонує менеджер"
+
+// // 1 зробити переміні
+
+// const option = "3";
+// let message = "";
+
+// // 2. використати switch
+// // 3. кожен message записати в перемінну
+// // 4. вивести в консоль
+
+// switch (option) {
+//     case "1":
+//         message = "Ви можете забрати товар завтра о 13:00";
+//         break;
+//     case "2":
+//         message = "Курєр доставить товар завтра до 10:00";
+//         break;
+//     case "3":
+//         message = "Товар буде відправлено сьогодні";
+//         break;
+//     default:
+//         message = "Вам зателефонує менеджер";
+// }
+
+// console.log(message);
+
+// Цикл for
+
+// for(ініціалізація; умова; ітерація) { тіло циклу }
+
+for (let i = 0; i < 6; i += 1){
+    console.log(i);
+}
+console.log("Цикл завершено");
+
+
+
+
+
+
