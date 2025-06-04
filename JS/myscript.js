@@ -297,10 +297,69 @@
 
 // for(ініціалізація; умова; ітерація) { тіло циклу }
 
-for (let i = 0; i < 6; i += 1){
-    console.log(i);
-}
-console.log("Цикл завершено");
+// for (let i = 0; i < 6; i += 1){
+//     console.log(i);
+// }
+// console.log("Цикл завершено");
+
+// // // 1 зробити вар
+// const minSalary = 500;
+// const maxSalary = 5000;
+// const employees = 7;
+// let totalSalary = 0;
+
+// // 2 Зробти цикл
+// for (let i = 1; i <= employees; i += 1){
+//     // 3 згенерувати випадкову зарплату
+//     const salary = Math.round(
+//         Math.random() * (maxSalary - minSalary) + minSalary,
+//     );
+
+//     console.log(`Зп робітника ${i} - ${salary}`);
+//     // 4 додати до тотала
+
+//     totalSalary += salary;
+    
+// // console.log (`totalSalary` , totalSalary );
+// }
+
+// // 5 Log
+
+// console.log (`totalSalary` , totalSalary );
+
+
+// написати алгоритм якій підщитає суму усіх 4 чисел
+// які входять діапазон чисел в переміні від min до max
+//  наприклад якщо min=0 a max=5  то діапазон 0-5 і у ньому 2 парних числа 2 и 4 і їх сума 6
+
+// 1 Вари 
+// const min = 0;
+// const max = 5;
+// let total = 0;
+
+// // for от min до max c шагом в 1
+
+// for (let i = min; i <= max; i += 1) {
+//     console.log(i);
+
+//     // перевіряємо залишок від діляння
+
+//     if (i % 2 !== 0) {
+//         console.log(`непарне:`, i);
+//         continue;
+//         }
+//     // записуємо суму 
+
+//     console.log(`парне:`, i);
+//         total += i;
+
+// }
+
+
+
+// console.log(`total:`, total);
+
+
 
 
 
