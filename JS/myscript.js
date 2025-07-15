@@ -389,7 +389,7 @@
 // Якщо від (100-1000)-бронза 2%
 //  Якщо від(1000-5000)-срібло 5%
 //  Якщо більше 5000 -золото 10%
-// Якщо менше 100 - ви не у клубі знижка не надається  
+// Якщо менше 100 - ви не у клубі знижка не надається
 
 //  У підсумку ввести : Оформлення заказу на суму (...) зі знижкою(....)
 
@@ -399,7 +399,7 @@
 // let discount = 0;
 
 // if (totalSpent < 100) {
-//     console.log(`Ви не у клубі знижка не надається  
+//     console.log(`Ви не у клубі знижка не надається
 // `);
 // }
 // else if (totalSpent >= 100 && totalSpent < 1000) {
@@ -422,4 +422,118 @@
 
 // console.log(`Загальна сума витрачена ${totalSpent}`);
 
-// // Цепочка може бути різна потрібно робити її логічною 
+// // Цепочка може бути різна потрібно робити її логічною
+
+
+// Масиви
+
+// const fruits = ["apple", "banana", "cherry", "orange"];
+// console.table(fruits);
+// fruits[3] = 'pineapple';
+// console.table(fruits);
+// // console.log(fruits[3]);
+
+// передача по значенню
+// let a = 10;
+// let b = a;
+
+// console.log(a);
+// console.log(b);
+
+// a = 20;
+// console.log(a);
+// console.log(b);
+
+// передача по посиланню
+
+// const a = [1,2,3];
+// const b = a;
+
+// console.log(a);
+// console.log(b);
+// a[0] = 100;
+// console.log(a);
+// console.log(b);
+
+// const fruits = ["apple", "banana", "cherry", "orange"];
+// console.table(fruits);
+// for (let i = 0; i < fruits.length; i += 1) {
+//     fruits[i] = 'penal';
+// }
+
+// for ( const fruit of fruits) {
+//     console.log(fruit);
+// }
+
+// const fruits = ["apple", "banana", "cherry", "orange"];
+
+// порахувати загальну суму покупок у корзині
+
+// const cart = [54, 28, 105, 70, 92, 17, 120,56,100];
+// переміна total до цикла
+// let total = 0;
+// // перебір масиву
+
+// // for (let i = 0; i < cart.length; i += 1) {
+// //     console.log(cart[i]);
+// //     total += cart[i];
+// // }
+// for (const item of cart) {
+   
+//     total += item;
+// }
+// // кожний елемент приплюсуємо до total
+// console.log('total', total);
+
+
+// добавити такс 20%
+
+// for (let i = 0; i < cart.length; i += 1) {
+//     cart[i] = Math.round(cart[i] * 1.2);
+// }
+
+
+// console.log(cart);
+
+//  for з І змінити у середини , про for дає клона попереднього числа
+
+
+// написати скріпт  перерахувати суму усіх чисел парних  у масиві 
+
+// const numbers = [1, 5, 8, 9, 12, 4, 15, 27, 30, 18, 14];
+
+// total
+
+// let total = 0;
+// перебрати масив
+
+// for (let i = 0; i < numbers.length; i += 1)
+// {
+//     console.log(numbers[i]);
+    // у кожній ітерації перевірити єлемент на парнісьть
+    // if (numbers[i] % 2 === 0) {
+    //     console.log("Парне");
+    //      // якщо парне плюсуїм до тотала 
+    //     total += numbers[i];
+    // }
+   
+    
+// }
+
+// for (const number of numbers) {
+//     console.log(number);
+
+// if (number % 2 === 0) {
+//         console.log("Парне");
+//          // якщо парне плюсуїм до тотала 
+//         total += number;
+//     }
+// }
+
+// console.log("Total", total);
+// continue- коли вписуєш це наступні дії не додаються у кінці він замикає цепочку дія називається "логіка від обратного"
+
+
+ 
+
+
