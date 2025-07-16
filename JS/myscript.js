@@ -537,3 +537,107 @@
  
 
 
+// const logins = ['ab3c', 'zl5i', 'av2i', 'dbv1']
+// const loginTofind = 'dbv1';
+// let message = 'Логін ${loginTofind} не знайдено';
+
+// for (let i = 0; i < logins.length; i += 1) {
+//     const login = logins[i];
+
+//      if (login === loginTofind) {
+//          message = `Логін ${loginTofind}  знайдений.`;
+//          break;
+//      }
+//          message = `Логін ${loginTofind} не знайдено.`;
+//     }
+
+
+
+// console.log(message);
+
+// перевірка на true або false
+// console.log(logins.includes(`abc`));
+
+// const message = logins.includes(loginTofind) ? 'Знайдено ${loginTofind}' : ' Не знайдено ${loginTofind}';
+// console.log(message);
+
+
+// сАме маленьке число в масиві , число унікальне не повторяється !
+
+// const numbers = [51, 18, 13, 24, 7, 85, 19];
+// let smollesNumber = numbers[0];
+
+// for (const number of numbers) {
+//     if (number < smollesNumber) {
+//         smollesNumber = number;
+// }
+// }
+
+// console.log('smollesNumber:', smollesNumber);
+
+// const string = 'JavaScript'
+// const letters = string.split('');
+// let invertedString = '';
+
+// console.log(letters);
+
+// for (const letter of letters) {
+//     console.log(letter);
+
+//     const isEqual = letter === letter.toLowerCase();
+//     invertedString += isEqual ? letter.toUpperCase() : letter.toLowerCase();
+    
+    
+// } console.log(' invertedString ', invertedString);
+
+// const title = 'Top 10 benefit of HP'
+// // const normalizedTitle = title.toLowerCase();
+// // const words = normalizedTitle.split('');
+// // const slug = words.join('-');
+
+// // декларативний код (простіший коротший код визивається з ліва на право )
+// const slug = title.toLowerCase().split(' ').join('-');
+// console.log(slug);
+
+// const array1 = [5, 10, 15, 20];
+// const array2 = [10, 20, 30,];
+// let total = 0;
+// const numbers = array1.concat(array2);
+// for (const number of numbers) {
+//     total += number;
+//         }
+
+// console.log(total);
+
+// const cards = [
+//     'Карта-1',
+//     'Карта-2',
+//     'Карта-3',
+//     'Карта-4',
+//     'Карта-5',
+// ];
+// console.table(cards);
+
+// const cardToRemove = 'Карта-3';
+
+// const index = cards.indexOf(cardToRemove);
+
+// console.log(index);
+
+// cards.splice(index, 3);
+
+// console.table(cards);
+
+// додаваня
+// const cardToInsept = 'Картка-6';
+// const index = 3;
+
+// cards.splice(1, 0, 'Карта-99');
+// console.table(cards);
+
+// Заміна
+// const cardToUpdate = 'Карта-4';
+
+// cards.splice(1, 2, 55)
+// console.table(cards);
+
