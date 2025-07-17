@@ -641,3 +641,72 @@
 // cards.splice(1, 2, 55)
 // console.table(cards);
 
+// ФУНКЦИЇ
+
+// const add = function (d, a) {
+//     console.log(d);
+//     console.log(a);
+
+   
+    
+//     console.log('Визиваєм назву функції add')
+
+//     return d + a;
+// };
+
+// const result = add(33, 26);
+// console.log('Відповідь', result);
+
+// add(33,26);
+
+// стек визова
+
+// const fnA = function () {
+//     console.log('Виконання функції А')
+
+
+//     // fnB();
+// };
+
+// const fnB = function () {
+//     console.log('Виконання функції Б')
+
+//     // fnC();
+// };
+
+// const fnC = function () {
+//     console.log('Виконання функції С')
+// };
+
+// //  console.log('Стек виконання функції A')
+// fnA();
+
+// //  console.log('Стек виконання функції B')
+// fnB();
+// //  console.log('Стек виконання функції С')
+// fnC();
+
+// const cart = [54, 28, 198, 70, 92, 17, 128, 12, 25, 90];
+// let total = 0;
+// for (const value of cart) {
+//     total += value;
+
+// }
+
+// console.log('Загальна сума:', total);
+
+// const calcTotalPrice = function (items) {
+//     console.log('в середині ', items);
+
+//     let total = 0;
+
+//     for (const item of items  ) {
+//         total += item;
+//     }
+
+//     return total;
+// };
+
+// console.log(calcTotalPrice([15, 20, 25]));
+// console.log(calcTotalPrice([50, 10, 200]));
+
