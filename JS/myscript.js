@@ -710,3 +710,73 @@
 // console.log(calcTotalPrice([15, 20, 25]));
 // console.log(calcTotalPrice([50, 10, 200]));
 
+
+// const logItem = function (items) {
+//     for ( const item of items)
+//         console.log(item);
+
+    
+// };
+
+// logItem(['Kiwi', 'Mango', 'Apple', 'Poly']);
+// logItem([1, 2, 3, 4, 5]);
+// logItem(['Часи', 'Мишка', 'Клавиатура']);
+
+
+
+// const logins = ['ab3c', 'zl5i', 'av2i', 'dbv1']
+
+// const findLogin = function (allLogins , loginToFind) {
+//     for (const login of allLogins) {
+//         if (login === loginToFind) {
+//             return `Логін ${loginToFind} знайдено `;
+//        }
+//    }
+
+//     return `Логін ${loginToFind} не знайдено`;
+// };
+
+// console.log( findLogin(logins, 'ab3c'));
+// console.log( findLogin(logins, 'zl51'));
+// console.log( findLogin(logins, 'av2i'));
+// console.log( findLogin(logins, 'dbv1'));
+
+
+// const logins = ['ab3c', 'zl5i', 'av2i', 'dbv1']
+
+// const findLogin = function (allLogins, loginToFind) {
+//     const message = allLogins.includes(loginToFind)
+//         ? `Логін ${loginToFind} знайдено`
+//         : `Логін ${loginToFind} не знайдено`;
+    
+//     return message;
+// };
+
+
+// console.log( findLogin(logins, 'ab3c'));
+// console.log( findLogin(logins, 'zl51'));
+// console.log( findLogin(logins, 'av2i'));
+// console.log( findLogin(logins, 'dbv1'));
+
+
+// false ? 1:2 // 2
+// true ? 1:2 // 1
+
+
+// const logins = ['ab3c', 'zl5i', 'av2i', 'dbv1']
+
+// const findLogin = function (allLogins, loginToFind) {
+//     return allLogins.includes(loginToFind)
+//         ? `Логін ${loginToFind} знайдено`
+//         : `Логін ${loginToFind} не знайдено`;
+    
+    
+// };
+
+
+// console.log( findLogin(logins, 'ab3c'));
+// console.log( findLogin(logins, 'zl51'));
+// console.log( findLogin(logins, 'av2i'));
+// console.log( findLogin(logins, 'dbv1'));
+
+
