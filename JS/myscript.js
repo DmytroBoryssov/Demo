@@ -779,4 +779,138 @@
 // console.log( findLogin(logins, 'av2i'));
 // console.log( findLogin(logins, 'dbv1'));
 
+// ОБЄКТИ
+
+// const playlist = {
+//     name: 'Супер плейліст',
+//     rating: 5,
+//     tracks: ['T-2', 'T-32', 'T-34'],
+//     trackCount: 3,
+// }; 
+// console.log(playlist);
+// console.log(playlist.tracks);
+// console.log(playlist.rating);
+// console.log(playlist.trackCount);
+// console.log(playlist.name);
+
+
+// const userName = 'name';
+// console.log(playlist[userName]);
+
+// Застосовується у 3 випадках "обласьть видимості"
+
+// 1.
+// const x = {};
+// console.log({});
+// 2.
+// const fn = function (myObject) {
+//     // myObject = { a: 10, b: 33 }
+//     console.log(myObject);
+
+// };
+// fn({ a: 10, b: 33 });
+// 3.
+// const fm = function () {
+//     return { d:-9 };
+// };
+// console.log(fm());
+
+// Коротка запис свойства
+
+
+// const username = 'Mango';
+// const email = "mango@mail.com";
+
+// const signupData = {
+//     username,
+//     // імя буде використання як імя значення якщо вони співпадають
+//     email,
+// };
+// console.log(signupData);
+
+
+
+// Вичисляємі свойства
+// itput name = color - імя value = tomato - значення
+
+// const inputName = 'color';
+// const inputValue = 'tomato';
+
+// const colorPikcerData = {
+//     [inputName]: inputValue,
+    
+
+
+// };
+
+// console.log(colorPikcerData);
+
+
+// Силочний тип {} === {}
+
+// const a = { x: 1, y: 2 };
+// const b = a;
+
+// console.log(b === a);
+
+// Масиви и функції це обєкти
+
+
+// const a = [1, 2, 4];
+// a.hello = 'Dimka';
+
+// console.log(a);
+
+// const fn = function () {
+//     console.log('Hello');
+// };
+// fn.Hello = 'Dimka';
+// console.dir(fn.Hello);
+
+// Методи обєкта и this при звертанню до свойств в методах
+// THIS використовується тільки у функції
+
+// const playlist = {
+//     name: 'Супер плейліст',
+//     rating: 5,
+//     tracks: ['T-2', 'T-32', 'T-34'],
+    // trackCount: 3,- необовязково зберіжати на масиві це кількісьть треків 
+    // // Старий способ
+    // getName: function () {
+    //     console.log('Ага вийшло');
+    // }
+    // Метод обєктут новий способ
+    //  getName() {
+    //     console.log('Ага вийшло');
+    // }
+
+    // playlist.getName();
+//     changeName(newName) {
+//         // console.log('this всередині newName:', this);
+
+//         this.name = newName;
+//     },
+//         addTrack(track){
+//             this.tracks.push(track);
+//             // this.trackCount = this.tracks.length;
+//         },
+//     updateRating(newRating) {
+//         this.rating = newRating;
+//         // getTrackCount(){
+//         //     return this.tracks.length;
+//         // },- це можна задати коли потрібно вернути кількісьть треків 
+//   },
+        
+
+// }; 
+
+// playlist.changeName('Play');
+
+
+// playlist.addTrack('NT')
+
+// playlist.updateRating(4);
+// console.log(playlist);
+
+
 
