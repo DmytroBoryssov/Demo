@@ -950,15 +950,15 @@
 
 // Робота з колекцією 
 
-const friends = [
-    { name: 'Adam ', online: false },
-    { name: 'Jessi', online: true },
-    { name:  'Jim' , online: true },
-    { name: 'Ajax', online: false },
+// const friends = [
+//     { name: 'Adam ', online: false },
+//     { name: 'Jessi', online: true },
+//     { name:  'Jim' , online: true },
+//     { name: 'Ajax', online: true },
     
-];
+// ];
 
-console.table(friends);
+// console.table(friends);
 
 // for ( const friend of friends) {
 //     console.log(friend.online);
@@ -993,7 +993,7 @@ console.table(friends);
 //         console.log(friend.online);
 
 //         if (friend.online)
-//         if (!friend.online) - якщо не онлайнт тільки записати усе повністю у нову функцію 
+//         if (!friend.online) - якщо не онлайнт тільки записати усе повністю у нову функцію
 // {
 //             onlineFriends.push(friend);
 //         }
@@ -1005,4 +1005,25 @@ console.table(friends);
 // console.log(getonlineFriends(friends));
 
     
- 
+
+
+// const getFriedsByOnlineStatus = function (allfriends) {
+//     const friendsByStatus = {
+//         online :[],
+//         offline :[],
+//     };
+     
+//     for (const friend of allfriends) {
+//         if (friend.online) {
+//             friendsByStatus.online.push(friend);
+//             continue;
+//         }
+//         friendsByStatus.offline.push(friend);
+
+//     }
+//     return friendsByStatus;
+// };
+// // const key = friends online ? 'online' : 'offline';
+// // friendsByStatus[key].push(fried);
+// // };
+// console.log(getFriedsByOnlineStatus(friends));
