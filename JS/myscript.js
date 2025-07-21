@@ -912,5 +912,97 @@
 // playlist.updateRating(4);
 // console.log(playlist);
 
+// Перебор масива через for in u Object.keys/value/entries
+
+// const feedback = {
+//     good: 5,
+//     neutral: 10,
+//     bad: 3,
+// };
+
+// let totalFeelback = 0;
 
 
+// const keys = Object.keys(feedback);
+// console.log(keys);
+
+
+// for (const key of keys) {
+//     console.log(key);
+//     console.log(feedback[key]);
+//     totalFeelback += feedback[key];
+
+// };
+
+// console.log('totalFeedback :', totalFeelback);
+
+// const values = Object.values(feedback);
+
+// console.log(values);
+
+// for (const value of values) {
+//     console.log(value);
+//     totalFeelback += value;
+// }
+
+// console.log('totalFeeback:', totalFeelback);
+
+
+// Робота з колекцією 
+
+const friends = [
+    { name: 'Adam ', online: false },
+    { name: 'Jessi', online: true },
+    { name:  'Jim' , online: true },
+    { name: 'Ajax', online: false },
+    
+];
+
+console.table(friends);
+
+// for ( const friend of friends) {
+//     console.log(friend.online);
+//     friend.slip = 999;
+// }
+// console.table(friends);
+
+// const findFriendByName = function (allFriends, friendname) {
+
+
+// };
+//     for (const friend of allFriends) {
+//         // console.log(friend);
+//         // console.log(friend.name);
+
+//         if (friend.name === friendname) {
+//             return ' Знайшли ';
+//         }
+           
+//     };
+//     return ' Не знайшли ';
+// };
+// console.log(findFriendByName(friends, 'Ajax',));
+// console.log(findFriendByName(friends, 'John'));
+    
+
+// const getonlineFriends = function (allFriends) {
+//     const onlineFriends = [];
+
+//     for (const friend of allFriends) {
+//         console.log(friend);
+//         console.log(friend.online);
+
+//         if (friend.online)
+//         if (!friend.online) - якщо не онлайнт тільки записати усе повністю у нову функцію 
+// {
+//             onlineFriends.push(friend);
+//         }
+//     }
+    
+//     return onlineFriends;
+// };
+
+// console.log(getonlineFriends(friends));
+
+    
+ 
