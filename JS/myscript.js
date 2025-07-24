@@ -1027,3 +1027,141 @@
 // // friendsByStatus[key].push(fried);
 // // };
 // console.log(getFriedsByOnlineStatus(friends));
+
+
+
+// Створена корзині товарів 
+
+// { name : 'apple' , price : 50 }
+// { name : 'lemon' , price : 60}
+// { name : 'orange' , price : 70}
+// { name : 'strawbeery' , price : 110 }
+
+// const cart = {
+//     item: [],
+//     getItems() {},
+//     add(product) { },
+//     remove(productName) { },
+//     clear() { },
+//     countTotalPrice() { },
+//     increaseQuantity(productName) { },
+//     decreaseQuantity(productName) { },
+    
+// };
+
+// console.table(cart.getItems());
+
+// cart.add({ name: 'apple', price: 50 });
+// cart.add({ name: 'lemon', price: 60 });
+// cart.add({ name: 'orange', price: 70 });
+// cart.add({ name: 'strawbeery', price: 110 });
+
+// console.table(cart.getItems());
+
+
+// спосіб розпилення spread замінна і бистриша функція 
+// const numbers = [...[1, 2, 3]];
+// console.log(numbers);
+
+// const temps = [18, 14, 12, 21, 17, 29, 24, 767676];
+
+// console.log(Math.max(...temps));
+
+
+// const lastWeekTemps = [1, 2, 3];
+// const currentTemps = [4,5,6];
+// const nextWeekTemps = [7,8,9];
+
+// const allTemps = [... lastWeekTemps, ...currentTemps, ...nextWeekTemps];
+
+// console.log(allTemps);
+
+// розпилення обєкту
+
+// const a = { x: 1, y: 2 };
+// const b = { x: 100, z: 3 };
+
+// const c = {
+//     ...a,
+//     x:99,
+//     ...b,
+//     z:101,
+// }
+// // Object.assign({}, a, b);
+
+// console.log(c);
+
+// деструктиризація - const {} = 
+
+// const playlist = {
+//     name: 'Супер плейліст',
+//     rating: 5,
+//     tracks: ['T-2', 'T-32', 'T-34'],
+//     trackCount: 3,
+// }; 
+
+// const { name } = playlist;  якщо свойства немає стамимо author = 'USER' після свойства , щоб змінити назва обєкта name : userName
+
+// console.log(name);
+
+
+// глубока деструктиризація 
+
+// const profile = {
+//     name: 'Jace Q',
+//     tag: 'jq',
+//     location: 'Ola-ola , Kongo',
+//     avatar: 'http:', 
+//     stats: {
+//         followers: 7689,
+//         views: 892,
+//         likes: 787878,
+//     },
+// };
+
+// const { name , tag, avatar, stats : { views}, } = profile;
+
+// console.log( name , tag, avatar, views );
+
+
+//  деструктиризація  масива
+
+
+// const rgb = [256, 100,80];
+
+// const [a, b, c] = rgb; якщо треба пропустиити потрібно поставити кому 
+// console.log(rgb);
+
+
+// const authors = {
+//     Jake: 6,
+//     Adam: 7,
+//     Ajax: 9,
+//     Eva: 4,
+// };
+
+// const entries = Object.entries(authors);
+// for (const [name, rating] of entries) {
+//     console.log(name, rating);
+// }
+
+// REST (resrProps)
+
+
+const profile = {
+    name: 'Jace Q',
+    tag: 'jq',
+    location: 'Ola-ola , Kongo',
+    avatar: 'http:', 
+    stats: {
+        followers: 7689,
+        views: 892,
+        likes: 787878,
+    },
+};
+ 
+const { name, tag, location, ... restProps } = profile;
+
+// console.log(name, tag, location);
+// console.log(restProps);
+// console.log(profile);
