@@ -1038,18 +1038,45 @@
 // { name : 'strawbeery' , price : 110 }
 
 // const cart = {
-//     item: [],
-//     getItems() {},
-//     add(product) { },
-//     remove(productName) { },
-//     clear() { },
-//     countTotalPrice() { },
+//     items: [],
+//     getItems() {
+//         return this.items;
+//     },
+//     add(product) {
+//         this.items.push(product);
+//      },
+//     remove(productName) { 
+//         for (const item of this.items) {
+//             console.log(item);
+
+//             if (productName === item.name) {
+//                 console.log('Знайшли', productName);
+//             }
+//         }
+//     },
+//     clear() { 
+//         this.item = [];
+//     },
+//     countTotalPrice() {
+//         const { items } = this;
+//         let total = 0;
+
+//         for (const {price} of items) {
+//             total += price;
+//         }
+
+//         return total;
+//     },
 //     increaseQuantity(productName) { },
 //     decreaseQuantity(productName) { },
     
 // };
 
+
+
 // console.table(cart.getItems());
+
+
 
 // cart.add({ name: 'apple', price: 50 });
 // cart.add({ name: 'lemon', price: 60 });
@@ -1057,6 +1084,10 @@
 // cart.add({ name: 'strawbeery', price: 110 });
 
 // console.table(cart.getItems());
+
+// console.log('Total', cart.countTotalPrice());
+
+// cart.remove('apple');
 
 
 // спосіб розпилення spread замінна і бистриша функція 
@@ -1148,20 +1179,41 @@
 // REST (resrProps)
 
 
-const profile = {
-    name: 'Jace Q',
-    tag: 'jq',
-    location: 'Ola-ola , Kongo',
-    avatar: 'http:', 
-    stats: {
-        followers: 7689,
-        views: 892,
-        likes: 787878,
-    },
-};
+// const profile = {
+//     name: 'Jace Q',
+//     tag: 'jq',
+//     location: 'Ola-ola , Kongo',
+//     avatar: 'http:', 
+//     stats: {
+//         followers: 7689,
+//         views: 892,
+//         likes: 787878,
+//     },
+// };
  
-const { name, tag, location, ... restProps } = profile;
+// const { name, tag, location, ... restProps } = profile;
 
 // console.log(name, tag, location);
 // console.log(restProps);
 // console.log(profile);
+
+
+
+// const showProfileInfo = function ( { name, tag, location, avatar, stats} ) {
+//     console.log(name, tag, location, avatar, stats);
+    
+// };
+// const profile = {
+//     name: 'Jace  Q',
+//     tag: 'jq',
+//     location: 'Ola-ola , Kongo',
+//     avatar: 'http:',
+//     stats: {
+//         followers: 7689,
+//         views: 892,
+//         likes: 787878,
+//     },
+
+// };
+
+// showProfileInfo(profile);
