@@ -1217,3 +1217,152 @@
 // };
 
 // showProfileInfo(profile);
+
+
+// Callback функції `функція яка кідається в другу функцію `
+
+
+// Концепція 'проба1'
+// const fnA = function (message, Callback) {
+//     console.log(Callback);
+//     console.log(message);
+//     Callback(999);
+// };
+
+// const fnB = function (number) {
+//     console.log('спроба виклику фнБ :' , number);
+// };
+
+// fnA('gggghl' , fnB);
+// 'проба2'
+// const doMath = function ( a, b, callback ) {
+//     const result = callback(a, b);
+//     console.log(result);
+
+    
+// };
+
+
+// doMath(9, 5,function (x, y) {
+//     return x + y;
+// });
+// const add = function (x, y) {
+//     return x + y;
+// };
+
+// const sub = function (x, y) {
+//     return x - y;
+// };
+
+// doMath (add,9, 5, );
+// doMath(sub,10, 8, );
+
+
+// Приклад 
+
+// const buttonRef = document.querySelector('.js-buttom');
+// const handleBtnClick = function () {
+//     console.log('Клік по кнопці');
+// };
+
+// buttonRef.addEventListener('click',handleBtnClick)
+
+// геолокація
+// const onGetPositionOff = function (position) {
+//     console.log(position);
+// }
+// const onGetPositionOn = function (error) {
+//     console.log(error);
+// }
+// window.navigator.geolocation.getCurrentPosition(
+//     onGetPositionOff,
+//     onGetPositionOn,
+// );
+
+// Інтервали 
+
+// const callback = function () {
+//     console.log('Передаємо певний час 2 sek. ');
+// };
+// setTimeout(callback, 2000);
+
+// http - запрос
+
+// const onRegSes = function (resp) {
+//     console.log('відповідь');
+//     console.log(resp);
+// };
+// fetch('http://pokeapi.co/api/v2/pokemon') .then(res => res.json()).then(onRegSes);
+
+// Замикання 
+
+
+// const fnA = function (parameter) {
+//     const innerVarieble = 'значення переміної функції fnA';
+
+//     const innerFunction = function () {
+//         console.log(innerVarieble);
+//         console.log(parameter);
+//         console.log('Виклик функції innerFunction');
+//     };
+
+//     return innerFunction;
+// };
+
+// const fnB = fnA(9999);
+// fnB();
+
+// console.log(fnB);
+
+// 'Поварьонек' приклад 
+
+// const makeDish = function (shefName, dish) {
+//     console.log(`${shefName} готує ${dish}`);
+// };
+// // makeDish('Adam', 'Кава');
+// // makeDish('Adam', 'Чай');
+// // makeDish('Adam', 'Латте');
+
+// // makeDish('Jack', 'Суп');
+// // makeDish('Jack', 'Борщ');
+// // makeDish('Jack', 'Омлет');
+
+// const makeShef = function (name) {
+//     const makeDish = function (dish) {
+//         console.log(`${name} готує ${dish}`);
+//     };
+
+//     return makeDish;
+// };
+
+
+// const Adam = makeShef('Adam');
+
+
+// Adam('Латте');
+// Adam('Салатік');
+
+
+// const Jack = makeShef('Jack');
+
+// Jack('Яйце пашот !!!!');
+
+
+// Заокруглення
+
+// const floatingPoint = 3.6688;
+// const someIt = Math.round(floatingPoint); // буде 3 без крапки
+// const withDecimals = Number(floatingPoint.toFixed(2));// у () буде кількісьть цифр після крапкі 3.66
+
+// стрілочні функції 
+// const add = (a, b, c) => a, b, c;
+
+// const add = (a, b, c) => {
+//     console.log(a, b, c);
+
+//     return a + b + c;
+// };
+
+// console.log(add(5, 10, 15));
+
+
