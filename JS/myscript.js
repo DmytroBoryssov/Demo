@@ -1365,4 +1365,135 @@
 
 // console.log(add(5, 10, 15));
 
+// ПЕРЕБИРАННЯ МАСИВІВ
+
+// forEach
+
+// const numbers = [5, 10, 15, 20, 25];
+
+// numbers.forEach(function (numbers, index, array) {
+//     console.log('naumber', numbers);
+// });
+
+// console.log(numbers);
+
+// map
+
+// const numbers = [5, 10, 15, 20, 25];
+// const doubledNums = numbers.map(number => {
+//     console.log(number);
+
+//     return number * 2;
+// });
+
+// console.log('number', numbers);
+
+// console.log('doubledNums', doubledNums);
+
+// const players = [
+//     { id: 'player-1', name: 'Jack', timePlayed: 310, points: 54, online: false },
+//     { id: 'player-2', name: 'Ajax', timePlayed: 470, points: 92, online: true },
+//     { id: 'player-3', name: 'Ron', timePlayed: 230, points: 50, online: true },
+//     { id: 'player-4', name: 'Ebbi', timePlayed: 300, points: 64, online: false },
+//     { id: 'player-5', name: 'Don', timePlayed: 198, points: 90, online: true },
+// ];
+
+// const playerName = players.map(player => {
+//     // console.log(player);
+
+//     return player.name;
+// });
+// console.log('playerName', playerName);
+
+// const playerIds = players.map(player => player.id);
+// console.log('playersIds', playerIds);
+
+
+// const updatePlayers = players.map(player => ({
+//      ...player,
+//         points: player.points * 1.2,
+    
+// }));
+
+// console.log(updatePlayers);
+// // console.table(updatePlayers);
+
+// const playerIdToUpdate = 'player-1';
+// const updatePlayers = players.map(player => {
+//     if (playerIdToUpdate === player.id) {
+//         // console.log('OLD');
+//         return {
+//             ...player,
+//             timePlayed: player.timePlayed + 25,
+//         };
+//     }
+//     return player;
+// });
+
+// console.table(updatePlayers);
+
+// const playerIdToUpdate = 'player-1';
+
+// const updatePlayers = players.map(player =>
+//     playerIdToUpdate === player.id
+//         ? { ...player, timePlayed: player.timePlayed + 25,}
+//     : player,
+// );
+
+// console.table(updatePlayers);
+
+
+// Filter
+// const filteredNumb = numbers.filter(number => number < 15);
+// console.log(filteredNumb);
+
+
+
+// const naumbers = [5, 10, 15, 20, 25];
+
+// const players = [
+//     { id: 'player-1', name: 'Jack', timePlayed: 310, points: 54, online: false },
+//     { id: 'player-2', name: 'Ajax', timePlayed: 470, points: 92, online: true },
+//     { id: 'player-3', name: 'Ron', timePlayed: 250, points: 50, online: true },
+//     { id: 'player-4', name: 'Ebbi', timePlayed: 300, points: 64, online: false },
+//     { id: 'player-5', name: 'Don', timePlayed: 198, points: 90, online: true },
+// ];
+
+// const onlinePlayers = players.filter(player => player.online);
+// console.table(onlinePlayers);
+
+// const offlinePlayers = players.filter(player => !player.online);
+// console.table(offlinePlayers);
+
+// const hardcorePlayers = players.filter(player => player.timePlayed >= 250);
+// console.table(hardcorePlayers);
+
+// find
+
+// const numbers = [5, 10, 15, 20, 25];
+
+// const players = [
+//     { id: 'player-1', name: 'Jack', timePlayed: 310, points: 54, online: false },
+//     { id: 'player-2', name: 'Ajax', timePlayed: 470, points: 92, online: true },
+//     { id: 'player-3', name: 'Ron', timePlayed: 250, points: 50, online: true },
+//     { id: 'player-4', name: 'Ebbi', timePlayed: 300, points: 64, online: false },
+//     { id: 'player-5', name: 'Don', timePlayed: 198, points: 90, online: true },
+// ];
+
+// // const number = numbers.find(number => number > 10);
+// // console.log(number);
+
+
+// const playerIdToFind = 'player-5';
+
+// const playerWithId = players.find(player => player.id === playerIdToFind);
+// console.log(playerWithId);
+
+// const playerNameFind = 'Don';
+
+// const playerWithName = players.find(player => player.name === playerNameFind);
+// console.log(playerNameFind);
+
+
+
 
