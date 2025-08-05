@@ -1496,4 +1496,75 @@
 
 
 
+// every
 
+// const players = [
+//     { id: 'player-1', name: 'Jack', timePlayed: 310, points: 54, online: false },
+//     { id: 'player-2', name: 'Ajax', timePlayed: 470, points: 92, online: true },
+//     { id: 'player-3', name: 'Ron', timePlayed: 250, points: 50, online: true },
+//     { id: 'player-4', name: 'Ebbi', timePlayed: 300, points: 64, online: false },
+//     { id: 'player-5', name: 'Don', timePlayed: 198, points: 90, online: true },
+// ];
+
+// const isAllonline = players.every(player => player.online)
+// console.log(isAllonline);
+
+
+// some
+
+
+// const isAllonline = players.some(player => player.online);
+// console.log(isAllonline);
+
+
+// reduce
+
+// const numbers = [5, 10, 15, 20, 25];
+
+// const total = numbers.reduce( (acc, number) =>  acc + number, 0 );
+// console.log(total);
+
+// const salary = {
+//     adam: 100,
+//     ewa: 80,
+//     jack: 90,
+// };
+
+// const totalSalary = Object.values(salary).reduce((total, value) => total + value, 0);
+// console.log(totalSalary);
+
+// const players = [
+//     { id: 'player-1', name: 'Jack', timePlayed: 310, points: 54, online: false },
+//     { id: 'player-2', name: 'Ajax', timePlayed: 470, points: 92, online: true },
+//     { id: 'player-3', name: 'Ron', timePlayed: 250, points: 50, online: true },
+//     { id: 'player-4', name: 'Ebbi', timePlayed: 300, points: 64, online: false },
+//     { id: 'player-5', name: 'Don', timePlayed: 198, points: 90, online: true },
+// ]; 
+
+
+// const totalTimePlayed = players.reduce((totalTime, player) => totalTime + player.timePlayed, 0);
+// console.log(totalTimePlayed);
+
+
+// const cart = [
+//     { label: 'A', price: 100, quantity: 2 },
+//     { label: 'B', price: 120, quantity: 3 },
+//     { label: 'C', price: 70, quantity: 4},
+// ];
+    
+// const totalAmount = cart.reduce((total, {price,quantity}) => total + price * quantity, 0);
+// console.log(totalAmount);
+
+
+// const tweets = [
+//     { id: '00', like: 5, tag: ['js', 'nodejs'] },
+//     { id: '01', like: 2, tag: ['html', 'css'] },
+//     { id: '02', like: 17, tag: ['js', 'css'] },
+//     { id: '03', like: 8, tag: ['js', 'nodejs','react'] },
+//     { id: '04', like: 0, tag: ['js', 'nodejs','css'] },
+        
+// ];
+
+// const allTags = tweets.reduce((acc, tweet) => [...acc, ...tweet.tag],[]);
+
+//     console.log(allTags);
