@@ -1568,3 +1568,276 @@
 // const allTags = tweets.reduce((acc, tweet) => [...acc, ...tweet.tag],[]);
 
 //     console.log(allTags);
+
+
+// Sort
+
+// const numbers = [1, 9, 6, 2, 3];
+// numbers.sort();
+// console.log('numbers:',numbers);
+
+// const letters = ['b', 'B', 'a', 'A'];
+// letters.sort();
+// console.log(letters);
+
+// numbers.sort((curEl, nextEl) => nextEl - curEl);
+// console.log(numbers);
+
+// const players = [
+//     { id: 'player-1', name: 'Jack', timePlayed: 310, points: 54, online: false },
+//     { id: 'player-2', name: 'Ajax', timePlayed: 470, points: 92, online: true },
+//     { id: 'player-3', name: 'Ron', timePlayed: 250, points: 50, online: true },
+//     { id: 'player-4', name: 'Ebbi', timePlayed: 300, points: 64, online: false },
+//     { id: 'player-5', name: 'Don', timePlayed: 198, points: 90, online: true },
+// ]; 
+
+// const sortedBestPlayers = [...players].sort((prevPlayer, nextPlayer) => nextPlayer.timePlayed - prevPlayer.timePlayed);
+// console.table(sortedBestPlayers);
+
+// const sortedBestpoint = [...players].sort((prevPlayer, nextPlayer) => nextPlayer.points - prevPlayer.points);
+// console.table(sortedBestpoint);
+
+// const sortedPlayers = [...players].sort((newPlayers, oldPlayers) => oldPlayers.id - newPlayers.id);
+// console.table(sortedPlayers);
+
+//    chaining
+
+// const numbers=[1, 5, 2, 4, 3];
+// const greatThenTwo = numbers.filter(num => num > 2);
+// console.log(greatThenTwo);
+
+// const myltByThree = greatThenTwo.map(num => num * 3);
+// console.log(myltByThree);
+
+// const sorted = myltByThree.sort((a, b) => a - b);
+// console.log(sorted);
+
+// const sorted = numbers.filter(num => num > 2).map(num => num * 3).sort((a, b) => a - b);
+// console.log(sorted);
+
+// const players = [
+//     { id: 'player-1', name: 'Jack', points: 54, online: false },
+//     { id: 'player-2', name: 'Ajax', points: 92, online: true },
+//     { id: 'player-3', name: 'Ron', points: 50, online: true },
+//     { id: 'player-4', name: 'Ebbi', points: 64, online: false },
+// ];
+
+// const onlineSorted = players.filter(player => player.online).sort((a, b) => a.points - b.points);
+// console.table(onlineSorted);
+
+// const element = {
+//     class: '',
+//     hovered: false,
+//     changeClass(cls) {
+//         this.class = cls;
+//     return this;
+// },
+//     toggleHovered(){
+//         this.hovered = !this.hovered;
+//         return this;
+//     },
+// };
+
+// element.toggleHovered().changeClass('open').toggleHovered();
+// console.log(element);
+
+// THIS
+
+
+// У контексті USER.SHOWTAG(назва функції)
+
+// const user1 = {
+//     tag: 'Adam',
+//     showTag() {
+//         console.log('showTag -> this', this);
+//     },
+
+// };
+
+// // user.showTag();
+
+// // БЕЗ КОНТЕКСТУ TOO();
+
+// // строгий режим - undefined 99.9998%
+// // не встрогому режимі - window
+
+// const too = function () {
+//     console.log('too->this', this);
+// };
+
+// too();
+
+// const showTag = function(){
+//     console.log('tag',this);
+//     console.log('Show',this.tag);
+// };
+// // showTag();
+
+// const user = {
+//     tag: 'Adam',
+// };
+
+// user.showUserTag = showTag;
+// console.log('user', user);
+
+
+// user.showUserTag();
+
+// const user = {
+//     tag: 'Ajax',
+//     showTag(){
+//         console.log('tag', this);
+//         console.log('Name:', this.tag);
+//     },
+// };
+
+// user.showTag();
+
+// const outerSwohTeg = user.showTag;
+
+// outerSwohTeg();
+
+// const user = {
+//     tag: 'Jack',
+//     showTag() {
+//         console.log('tag', this);
+//         console.log('Name', this.tag);
+//     },
+    
+// };
+
+// const invoAction = function (action) {
+//     console.log(action);
+//     action();
+// };
+
+// invoAction(user.showTag);
+
+// const coun = {
+//     value: 10,
+//     inc(value) {
+//         console.log('inc', this),
+//             this.value += 1;
+//     },
+//     dec(value) {
+//         console.log('dec', this),
+//             this.value -= 1;
+//     },
+
+// };
+// const decBot = document.querySelector('.js-dec');
+// const incBot = document.querySelector('.js-inc');
+// const valueEl = document.querySelector('.js-value');
+// console.log(incBot);
+// console.log(decBot);
+// console.log(valueEl);
+
+// decBot.addEventListener('click', function() {
+//     console.log('Пройшов клік-');
+
+//     coun.dec();
+//     console.log(coun);
+// });
+
+// incBot.addEventListener('click', function () {
+//     console.log('Пройшов клік +');
+
+// });
+// const upCoun = function (value, oporet) {
+//     oporet(value);
+// };
+
+// coun.inc(323);
+// coun.dec(40);
+
+// CALL метод функції одноразова акція
+
+// const showThis = function () {
+//     console.log('THIS', this);
+// };
+
+// showThis();
+
+// const objA = {
+//     a: 2,
+//     b: 3,
+// };
+
+// showThis.call(objA);
+
+// const objB = {
+//     x:234,
+//     y:845,
+// };
+
+// showThis.call(objB);
+
+// showThis();
+
+// // Aplly визиває масив []-різниця між CALL
+
+
+
+// BIND робить окрему копію він не міняє оригінал часто юзається
+
+// const changeColor = function (color) {
+//     console.log('COLOR', this);
+//     this.color = color;
+// };
+
+// const hat = {
+//     color: 'black',
+// };
+
+// const sweater = {
+//     color: 'white',
+// };
+
+// const changeHatColor = changeColor.bind(hat);
+// const changeSwColor = changeColor.bind(sweater);
+
+// changeSwColor();
+
+// changeHatColor();
+
+
+const coun = {
+    value: 0,
+    inc(value) {
+        console.log('inc', this),
+            this.value += 1;
+    },
+    dec(value) {
+        console.log('dec', this),
+            this.value -= 1;
+    },
+
+};
+const decBot = document.querySelector('.js-dec');
+const incBot = document.querySelector('.js-inc');
+const valueEl = document.querySelector('.js-value');
+console.log(incBot);
+console.log(decBot);
+console.log(valueEl);
+
+decBot.addEventListener('click', function() {
+    console.log('Пройшов клік-');
+
+    coun.dec();
+    console.log(coun);
+
+    valueEl.textContent = coun.value;
+});
+
+incBot.addEventListener('click', function () {
+    console.log('Пройшов клік +');
+    coun.inc();
+    console.log(coun);
+
+     valueEl.textContent = coun.value;
+
+});
+
+
+
+
