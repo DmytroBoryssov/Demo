@@ -1801,43 +1801,135 @@
 // changeHatColor();
 
 
-const coun = {
-    value: 0,
-    inc(value) {
-        console.log('inc', this),
-            this.value += 1;
-    },
-    dec(value) {
-        console.log('dec', this),
-            this.value -= 1;
-    },
+// const coun = {
+//     value: 0,
+//     inc(value) {
+//         console.log('inc', this),
+//             this.value += 1;
+//     },
+//     dec(value) {
+//         console.log('dec', this),
+//             this.value -= 1;
+//     },
 
-};
-const decBot = document.querySelector('.js-dec');
-const incBot = document.querySelector('.js-inc');
-const valueEl = document.querySelector('.js-value');
-console.log(incBot);
-console.log(decBot);
-console.log(valueEl);
+// };
+// const decBot = document.querySelector('.js-dec');
+// const incBot = document.querySelector('.js-inc');
+// const valueEl = document.querySelector('.js-value');
+// console.log(incBot);
+// console.log(decBot);
+// console.log(valueEl);
 
-decBot.addEventListener('click', function() {
-    console.log('Пройшов клік-');
+// decBot.addEventListener('click', function() {
+//     console.log('Пройшов клік-');
 
-    coun.dec();
-    console.log(coun);
+//     coun.dec();
+//     console.log(coun);
 
-    valueEl.textContent = coun.value;
-});
+//     valueEl.textContent = coun.value;
+// });
 
-incBot.addEventListener('click', function () {
-    console.log('Пройшов клік +');
-    coun.inc();
-    console.log(coun);
+// incBot.addEventListener('click', function () {
+//     console.log('Пройшов клік +');
+//     coun.inc();
+//     console.log(coun);
 
-     valueEl.textContent = coun.value;
+//      valueEl.textContent = coun.value;
 
-});
-
-
+// });
 
 
+
+
+// ПРОТОТИПИ Object.creater 
+  
+
+// const objC = {
+//     z: 3,
+// };
+
+// const objB = Object.create(objC);
+// objB.dbv = 42;
+
+// // console.log(objB);
+
+// // console.log(objC);
+
+
+// // console.log(objB.z);
+
+// const objA = Object.create(objB);
+// objA.ana = 2323232323;
+
+// console.log(objC);
+
+// const Car = function ({ brand, model, price } = {} ) {
+//     this.brand = brand;
+//     this.model = model;
+//     this.price = price;    
+
+//     this.chPr = function (newPr) {
+//         this.price = newPr;
+//     }
+//  };
+
+// const myCar = new Car({
+//     brand: 'Audi',
+//     model: 'Q5',
+//     price: 45000,
+// });
+// console.log(myCar);
+
+// const myCar2 = new Car({
+//     brand: 'Opel',
+//     model: 'Insignia',
+//     price: 25000,
+// });
+// console.log(myCar2);
+
+// const myCar3 = new Car({
+//     brand: 'BMW',
+//     model: 'X-7',
+//     price: 50000,
+// });
+// console.log(myCar3);
+
+// const myCar4 = new Car();
+// console.log(myCar4);
+
+
+// const Car = function ({ brand, model, price } ) {
+//     this.brand = brand;
+//     this.model = model;
+//     this.price = price;
+// };
+// Car.prototype.sayHi = function () {
+   
+//     console.log('Hello');
+// };
+
+
+// const myCar = new Car({
+//     brand: 'Audi',
+//     model: 'Q5',
+//     price: 45000,
+// });
+// console.log(myCar);
+
+// myCar.sayHi();
+
+
+// const User = function ({ email, password } = {}) {
+//     this.email = email;
+//     this.password = password;
+
+// };
+
+// User.prototype.changeEmail = function (newMail) {
+//     this.email = newMail;
+// };
+ 
+// const ajax = new User({ email: 'ajax@mail.com', password: 22222 });
+
+// ajax.changeEmail('new-email@mail.com');
+// console.log(ajax);
