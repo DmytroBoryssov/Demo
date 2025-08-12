@@ -1933,3 +1933,76 @@
 
 // ajax.changeEmail('new-email@mail.com');
 // console.log(ajax);
+
+
+// CLASS
+
+
+// class Car {
+//     static AAA = 'aaa'
+    
+//     constructor({ a, b },{}) { 
+//         console.log('Конструктор')
+//         console.log(this);
+//         this.a = a;
+//         this.b = b;
+
+//     }
+    
+//     changeA(newA) {
+//         this.a = newA;
+//     }
+// };
+// console.dir(Car);
+
+
+// Гетери и сетери 
+
+
+// class Car {
+//     static description = 'Клас опису авто ';
+//     constructor({ brand, model } = {}) {
+//         this.brand = brand;
+//         this.model = model;
+//     }
+//     changeModel(newModel) {
+//         this.model = newModel;
+//     }
+//     get model() {
+//         return this._model;
+// }
+//     // getModel() {
+//     //     return this.model;
+//     // }
+//     set model(newModel) {
+//         this._model = newModel;
+//     }
+// }
+
+// const carInst = new Car({
+//     brand: 'BMW',
+//     model: 'X7',
+// });
+
+// console.log(carInst);
+
+// consol.log(carInst.model);-get
+// carInst.model='X5"-set
+// Вони лежать у конструкторі 
+
+
+// Гетери и сетери працюють(так званий функціонал обєкта) з обєктами 
+
+// const obj = {
+//     _a: 99,
+//     get a() {
+//         return this._a;
+//     },
+//     set a(b) {
+//         this._a = b;
+//     },
+// };
+
+// console.log(obj);
+
+
