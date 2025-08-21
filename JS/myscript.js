@@ -2006,3 +2006,155 @@
 // console.log(obj);
 
 
+// DOM !!!
+
+
+
+// Обєкт document та window 
+
+// querySelector - повертає ОДИН елемент колекції (перший елемент)
+// querySelectorAll - повертає всі елементи колекції
+
+// const navRef = document.querySelector('ul');
+// console.log(navRef);
+
+// const itemsRef = document.querySelectorAll('li');
+// console.log(itemsRef);
+
+
+
+
+
+
+const magicBtn = document.querySelector('.magic-btn');
+// const addBtn = document.querySelector('.add-btn')
+// Свойства елементів
+// magicBtn.addEventListener('click', () => {
+  
+    // const imgRef = document.querySelector('.hero_img');
+    // console.log(imgRef);
+    // console.log(imgRef.src);
+    // imgRef.src = 'фото/3.jpg';
+    // imgRef.alt = 'Шугаринг';
+    // const titleRef = document.querySelector('.hero_title');
+    // console.log(titleRef.textContent);
+    // titleRef.textContent = 'Заміна 2.0';
+// });
+
+
+// Атрибути елементів
+// setAttribute - встановлює атрибут і його значення
+// getAttribute - отримує значення атрибута
+// removeAttribute - видаляє атрибут
+// hasAttribute - перевіряє чи є атрибут
+// attributes - отримує всі атрибути
+// className - отримує і встановлює клас
+// id - отримує і встановлює id
+// innerHTML - отримує і встановлює вміст елемента
+
+
+// Data-атрибути (actions)
+// data-атрибути - це атрибути які починаються з data-
+// data-атрибути - це атрибути які не відображаються в DOM
+// data-атрибути - це атрибути які можна використовувати для власних атрибутів
+// data-атрибути - це атрибути які можна використовувати для власних атрибутів
+
+// const actions = document.querySelectorAll('.js-actions button');
+// console.log( actions[2].dataset);
+
+// addBtn.addEventListener('click',() => {
+//     const inputEl = document.querySelector('.js-input');
+//     console.log(inputEl.value);
+// });
+
+
+
+// ClassList
+
+// magicBtn.addEventListener('click', () => {
+  
+    // const navEl = document.querySelector('.site-nav');
+    // console.log(navEl.classList);
+    // navEl.classList.add('super-coll'); -// можна добавити
+    // navEl.classList.remove('super-coll'); // можна видалити
+     // navEl.classList.toggle('dimka'); // можна при натискані добавити при наступному натискані він зникає
+    // navEl.classList.replace('super-coll' , 'odl-class'); // заміна старого класу на новий  
+    // console.log(navEl.classList.contains('dimka')); // перевірка наявності класу - повертає true або false
+// });
+
+// const currentPageUrl = '/about';
+// const linkEl = document.querySelector(
+//     `.site-item__link[href="${currentPageUrl}]`,
+// ); 
+// console.log(linkEl);
+    
+// const titleEl = document.createElement('h2');//createElement- створення елементу 
+// titleEl.classList.add('page-title');
+// titleEl.textContent = ('созданий елемент ');
+// console.log(titleEl);
+
+// document.body.appendChild(titleEl);//додаваня елементу
+
+// const imgEl = document.createElement('img');
+// imgEl.src="https://ru.freepik.com/free-photo/closeup-scarlet-macaw-from-side-view-scarlet-macaw-closeup-head_27271706.htm#fromView=keyword&page=1&position=0&uuid=3e76c64f-7f00-4cf0-b59a-cc1f1d04921c&query=Jpg"
+// imgEl.alt = 'mouse';
+// imgEl.width = 360;
+// console.log('imgEl', imgEl);
+
+// document.body.appendChild(imgEl);
+
+// const navItemEl = document.createElement('li');
+// navItemEl.classList.add('site-nav__item');
+// const navLinkEl = document.createElement('a');
+// navLinkEl.classList.add('site-nav_-_link');
+// navLinkEl.textContent = 'Кабінет';
+// navLinkEl.href = '/portfolio';
+
+// navItemEl.appendChild(navLinkEl);
+// console.log(navItemEl);
+
+// const navEl = document.querySelector('.site-nav');
+
+// navEl.insertBefore(navItemEl, navEl.firstElementChild);// вставляє перешим елементом якщо потрібно перед 2 children[1]
+
+// append метод у який можна подати одразу пару елементів важливий порядок передачі елементів
+
+const colorPikcerOptions = [
+    {label:'red',color: '#F44336'},
+    {label:'green',color: '#4CAF50'},
+    {label:'blue',color: '#2196F3'},
+    {label:'grey',color: '#607D8B'},
+    {label:'pink',color: '#E91E63'},
+    {label:'indigo',color: '#3F5185'},
+];
+
+const colorPikcerConEl = document.querySelector('.js-color-picker');
+// const element = colorPikcerOptions.map(option => {
+//     const buttonEl = document.createElement('button');
+//     buttonEl.classList.add('color-picker_option');
+//     buttonEl.type = 'button';
+//     buttonEl.textContent = option.label;
+//     buttonEl.style.backgroundColor = option.label;
+
+//     return buttonEl;
+// });
+
+// console.log(element);
+
+// colorPikcerConEl.append(...element);
+
+const makeColorPicOpt = option => {
+    return option.map(option => {
+        const buttonEl = document.createElement('button');
+        buttonEl.classList.add('color-picker_option');
+        buttonEl.type = 'button';
+        buttonEl.textContent = option.label;
+        buttonEl.style.backgroundColor = option.label;
+
+        return buttonEl;
+    });
+};
+
+const element = makeColorPicOpt(colorPikcerOptions);
+
+colorPikcerConEl.append(...element);
