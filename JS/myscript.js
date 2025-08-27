@@ -2119,16 +2119,16 @@ const magicBtn = document.querySelector('.magic-btn');
 
 // append метод у який можна подати одразу пару елементів важливий порядок передачі елементів
 
-const colorPikcerOptions = [
-    {label:'red',color: '#F44336'},
-    {label:'green',color: '#4CAF50'},
-    {label:'blue',color: '#2196F3'},
-    {label:'grey',color: '#607D8B'},
-    {label:'pink',color: '#E91E63'},
-    {label:'indigo',color: '#3F5185'},
-];
+// const colorPikcerOptions = [
+//     {label:'red',color: '#F44336'},
+//     {label:'green',color: '#4CAF50'},
+//     {label:'blue',color: '#2196F3'},
+//     {label:'grey',color: '#607D8B'},
+//     {label:'pink',color: '#E91E63'},
+//     {label:'indigo',color: '#3F5185'},
+// ];
 
-const colorPikcerConEl = document.querySelector('.js-color-picker');
+// const colorPikcerConEl = document.querySelector('.js-color-picker');
 // const element = colorPikcerOptions.map(option => {
 //     const buttonEl = document.createElement('button');
 //     buttonEl.classList.add('color-picker_option');
@@ -2143,18 +2143,149 @@ const colorPikcerConEl = document.querySelector('.js-color-picker');
 
 // colorPikcerConEl.append(...element);
 
-const makeColorPicOpt = option => {
-    return option.map(option => {
-        const buttonEl = document.createElement('button');
-        buttonEl.classList.add('color-picker_option');
-        buttonEl.type = 'button';
-        buttonEl.textContent = option.label;
-        buttonEl.style.backgroundColor = option.label;
+// const makeColorPicOpt = option => {
+//     return option.map(option => {
+//         const buttonEl = document.createElement('button');
+//         buttonEl.classList.add('color-picker_option');
+//         buttonEl.type = 'button';
+//         buttonEl.textContent = option.label;
+//         buttonEl.style.backgroundColor = option.label;
 
-        return buttonEl;
-    });
-};
+//         return buttonEl;
+//     });
+// };
 
-const element = makeColorPicOpt(colorPikcerOptions);
+// const element = makeColorPicOpt(colorPikcerOptions);
 
-colorPikcerConEl.append(...element);
+// colorPikcerConEl.append(...element);
+
+
+
+// innerHTML повертає весь контекст 
+
+
+// ПОДІЇ
+
+// const targetBtn = document.querySelector('.js-target-btn');
+// const addListenerBtn = document.querySelector('.js-add-listener');
+// const removeListenerBtn = document.querySelector('.js-remove-listener');
+
+// // targetBtn.addEventListener('click',  onTargetButtonClick); // або targetButtonClickHandel або handelTargetButtonClick
+// // function  onTargetButtonClick() {
+// //     console.log('Клік');
+// // };
+
+// // function logMessage() {
+// //     console.log('Клік по цільовій кнопці');
+// // }
+
+// addListenerBtn.addEventListener('click', () => {
+//     console.log('Додаєм цільову кнопку ');
+
+//     targetBtn.addEventListener('click', onTargetButtonClick);
+    
+// });
+// removeListenerBtn.addEventListener('click', () => {
+//     console.log('Забераємо цільву кнопку');
+
+//     targetBtn.removeEventListener('click', onTargetButtonClick);
+// });
+// function onTargetButtonClick() {
+//     console.log('Клік по цільовій кнопці ');
+// }
+
+
+// const form = document.querySelector('.js-register-form');
+
+// form.addEventListener('submit', onFormSubmit);
+
+// function onFormSubmit(event) {
+//     event.preventDefault();//відміна дій браузера за замовчаням 
+//     const formData = new FormData(event.currentTarget); // зберає усі дані formData
+//     console.log(formData);
+// }
+
+// Події iput
+
+//Патерн 'Обєкти ссилок ' можна зробити більш чительніше
+
+// const input = document.querySelector('.js-input');
+// const nameLabel = document.querySelector('.js-button > span');
+// const license = document.querySelector('.js-license');
+// const btn = document.querySelector('.js-button');
+
+// const refs = {
+// input : document.querySelector('.js-input'),
+// nameLabel: document.querySelector('.js-button > span'),
+// licenseCheckBox :document.querySelector('.js-license'),
+// btn : document.querySelector('.js-button'),
+// };
+
+// // refs.input.addEventListener('focus', onInputFocus);
+// // refs.input.addEventListener('blur', onInputBlur);
+// refs.input.addEventListener('input', onInputChange);
+// refs.licenseCheckBox.addEventListener('change', onLicenseChange);
+
+// function onInputFocus() {
+//     console.log('Инпут отримує фокус - подія focus')
+
+// }
+// function onInputBlur() {
+//     console.log('Инпут втрачає фокус - подія blur')
+    
+// }
+
+// function onInputChange(event) {
+//     console.log(event.currentTarget.value);
+//     refs.nameLabel.textContent = event.currentTarget.value;
+//  }
+
+// function onLicenseChange(event) {
+   
+//     refs.btn.disabled = !event.currentTarget.checked;
+//  }
+
+// KEY - місце на клавіатурі  CODE- позначення букви яку ввели
+// const refs = {
+//     output: document.querySelector('.js-output'),
+//     crearBtn: document.querySelector('.js-clear'),
+// };
+
+// window.addEventListener('keypress', onKeypress);
+// refs.crearBtn.addEventListener('click' , onClearOutput);
+
+// function onKeypress(event) {
+//     // console.log(event);
+//     // console.log('event.key:', event.key);
+//     // console.log('event.code', event.code);
+//     refs.output.textContent += event.key;
+// }
+
+// function onClearOutput() {
+//     refs.output.textContent = '';
+
+    
+// }
+
+
+// const boxRef = document.querySelector('.js-box');
+
+// boxRef.addEventListener('mouseenter', onMouseEnter);
+// boxRef.addEventListener('mouseleave', onMouseLeave);
+// boxRef.addEventListener('mousemove', onMouseMove);
+
+// function onMouseEnter(event) {
+//     const box = event.curretTarget;
+//     box.classList.add('box--active');
+    
+// }
+
+// function onMouseLeave(event) {
+//     const box = event.curretTarget;
+//     box.classList.remove('box--active');
+    
+// }
+
+// function onMouseMove(event) {
+//     console.log(event);
+// }
